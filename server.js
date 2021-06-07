@@ -15,7 +15,7 @@ const connection = mysql.createConnection({
 connection.connect((err) => {
     if (err) {
         console.log(err);
-        res.status(500);
+        res.status(404);
         return res.send("There was an error connecting to the database.");
     } console.log("You're connected!");
 
